@@ -14,15 +14,56 @@
 	</section>
 	<section class="Station">
 		<p class="stationID">Station ID:</p>
-		<p class="currentInfo">Current Info:</p>
-		<div class="stationData">
-			<p>Date and Time:</p>
-			<p>Water Level:</p>
-			<p>Winds:</p>
-			<p>Air Temp:</p>
-			<p>Water Temp:</p>
-			<p>Air Presure:</p>
-		</div>
+	</section>
+		<table class="stationTable">
+			<tr id="thead">
+				<th>Tide Info</th>
+			</tr>
+			<tr id="dateTime">
+				<td>Date and Time:</td>
+			</tr>
+			<tr id="waterLevel">
+				<td>Water Level:</td>
+			</tr>
+			<tr id="wind">
+				<td>Winds:</td>
+			</tr>
+			<tr id="airTemp">
+				<td>Air Temp:</td>
+			</tr>
+			<tr id="waterTemp">
+				<td>Water Temp:</td>
+			</tr>
+			<tr id ="airTemp">
+				<td>Air Presure:</td>
+			</tr>
+		</table>
+	</section>
+	<br>
+	<section class="forecast">
+		<table class="forecastTable">
+			<tr class="forecastHead">
+				<th>Forecast Info</th>
+				<th id="day1">d</th>
+				<th id="day2">d</th>
+				<th id="day3">d</th>
+				<th id="day4">d</th>
+				<th id="day5">d</th>
+			</tr>
+			<tr id="tempHigh">
+				<td>High Temp:</td>
+			</tr>
+			<tr id="tempLow">
+				<td>Low Temp:</td>
+			</tr>
+			<tr id="wx">
+				<td>Weather:</td>
+			</tr>
+			<tr id="windsFore">
+				<td>Winds:</td>
+			</tr>
+		</table>
+
 	</section>
 <!-- Scripts -->
  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
