@@ -1,0 +1,11 @@
+body {
+	background-color: lightgrey;
+}
+#mapid {
+	margin: 1em auto;
+	width: 20em;
+	height: 20em;
+}
+.pageName {
+	text-align: center;
+}
