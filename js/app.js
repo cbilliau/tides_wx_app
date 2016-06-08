@@ -1,5 +1,21 @@
 
 
+var pullStationData = function(prod) {
+	var request = {
+		date: 'latest',
+		station: '8461490',
+		product: prod,
+		units: 'english',
+		time_zone: 'lst',
+		application: 'web_services',
+		format: 'json'
+	},
+	$.ajax({
+		url: "http://tidesandcurrents.noaa.gov/api/datagetter",
+		data: request
+	})
+}
+
 
 // Map //
 var mymap = L.map('mapid').setView([41.361667, -72.09], 10);
@@ -12,4 +28,5 @@ var pullMap = function () {
 		    accessToken: 'pk.eyJ1IjoiY2JpbGxpYXUiLCJhIjoiY2lwNXJmZGN6MDBqYXdmbTNjbmNtOWx4MSJ9.o-LRx9-j3USLEJLh0QjpAg'
 				}).addTo(mymap);
 			};
+
 pullMap();
